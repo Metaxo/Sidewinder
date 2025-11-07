@@ -46,7 +46,10 @@ This folder contains a Python workflow for **automated analysis of fragment junc
 
 ## Example Run
 
+```
 python 21_junction_code.py
+
+```
 
 ## Dependencies
 

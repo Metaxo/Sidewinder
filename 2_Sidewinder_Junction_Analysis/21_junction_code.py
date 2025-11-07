@@ -28,8 +28,8 @@ x = 25
 
 # Outputs
 junction_path_name = "junctions.fasta"
-heatmap_name = "mScar_heatmap.png"
-excel_name = "mScar_heatmap.xlsx"
+heatmap_name = "heatmap.png"
+excel_name = "heatmap.xlsx"
 
 # -------------------------
 # 2) LOAD FRAGMENTS
