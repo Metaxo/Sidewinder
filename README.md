@@ -1,5 +1,5 @@
 # Sidewinder Data Analysis
-Code used for data analysis and select figure generation for the original Sidewinder paper 
+Data analysis and figure generation demo for the original Sidewinder paper with example datasets
 
 ## 1. PacBio Read Alignment and Post-Processing Pipeline 
 
