@@ -47,9 +47,30 @@ This folder contains a Python workflow for **automated analysis of fragment junc
 ## Example Run
 
 ```
-python 21_junction_code.py
+python 21_junction_analysis.py
+```
+
+## 3. Fragment-to-Read Assembly Validation Pipeline
+
+This folder contains a Python workflow for conducting fragment-level analysis by aligning expected fragments against sequencing reads (e.g., from PacBio or Nanopore) and evaluating assembly accuracy.
+
+---
+
+## Overview
+
+| Step | Script | Purpose | Output |
+|-|-|-|-|
+| **1** | `31_Fragment_Analysis.py` | Converts reads from FASTQ → FASTA, writes fragment FASTA, runs BLAST, parses hits, and classifies reads as full, partial, to-be-checked, or unusable. | `read_classification.csv`, `read_classification_summary.csv`, and `Sequences_to_be_checked.fasta` |
+
+---
+
+## Example Run
 
 ```
+python 31_Fragment_Analysis.py
+```
+
+---
 
 ## Dependencies
 
