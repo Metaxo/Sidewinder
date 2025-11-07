@@ -1,0 +1,1 @@
+water -asequence reference.fa -bsequence Lib_0_to_1000.fastq_filter_reads.fasta -datafile CUSTOM -gapopen 10 -gapextend 0.5 -outfile Lib_0_to_1000.fastq_filter_reads.fasta.txt
