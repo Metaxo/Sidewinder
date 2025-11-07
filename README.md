@@ -14,16 +14,6 @@ This folder contains a 3-step Python workflow for automated preprocessing, align
 
 ---
 
-## Dependencies
-
-- Python ≥ 3.8  
-- [Biopython](https://biopython.org/)  
-- NumPy ≥ 1.20  
-- Pandas ≥ 1.3  
-- EMBOSS ≥ 6.6.0  
-
----
-
 ## Example Run
 
 ```bash
@@ -38,7 +28,35 @@ sbatch Lib_0_to_1000.fastq_runEMBOSS.sh
 bash 12_Lib_0_to_1000_Seq.fastq_runEMBOSS_local.sh
 
 # Step 3: Parse alignments and build matrices
-python3 13_parse_EMBOSS.py
+python 13_parse_EMBOSS.py
 ```
+
+## 2. Sidewinder Junction Analysis and Misassembly Detection
+
+This folder contains a Python workflow for **automated analysis of Sidewinder junctions** in assembly product sequencing reads, with an example by the ** mScarlet ** sample mentioned in the paper. 
+## 1. Junction Analysis and Misassembly Detection Pipeline
+
+This folder contains a Python workflow for **automated analysis of fragment junctions** in DNA assembly products. 
+
+## Overview
+
+| Step | Script | Purpose | Output |
+|-|-|-|-|
+| **1** | `21_junction_code.py` | Generates all possible Sidewinder junctions, performs BLAST alignment against sequencing reads, visualizes with heatmap, outputs misassembled reads. | `mScar_heatmap.png`, `mScar_heatmap.xlsx`, and `misassemblies.fasta` |
+
+## Example Run
+
+python 21_junction_code.py
+
+## Dependencies
+
+- Python ≥ 3.8  
+- Biopython ≥ 1.80
+- NumPy ≥ 1.20  
+- Pandas ≥ 1.3  
+- EMBOSS ≥ 6.6.0
+- Matplotlib ≥ 3.5
+- Seaborn ≥ 0.11
+- BLAST+ ≥ 2.12.0
 
 
