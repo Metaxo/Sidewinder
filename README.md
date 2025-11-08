@@ -88,8 +88,10 @@ python 31_Fragment_Analysis.py
 
 ## Run Time
 
-Demos in the repo will not run more than a few minutes in a normal computer. 
+Installation of packages such as EMBOSS and BLAST should not take more than a few minutes.
 
-For higher depth sequencing read data, EMBOSS alignment might take hours to complete due to an expensive time complexity.
+Demos in the repo should finish running in a few minutes for a normal computer. 
+
+For higher depth sequencing read data, EMBOSS alignment might take hours to complete due to an expensive time complexity of the Smith-Waterman algorithm.
 
 
