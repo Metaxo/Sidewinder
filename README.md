@@ -86,4 +86,10 @@ python 31_Fragment_Analysis.py
 - Seaborn ≥ 0.11
 - BLAST+ ≥ 2.12.0
 
+## Run Time
+
+Demos in the repo will not run more than a few minutes in a normal computer. 
+
+For higher depth sequencing read data, EMBOSS alignment might take hours to complete due to an expensive time complexity.
+
 
